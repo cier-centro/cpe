@@ -1,0 +1,66 @@
+/*----------------------------------
+--------------Media Query-----------
+------------------------------------*/
+@media screen and (max-width: 1199px) {
+    .main-container {
+        .squares-container {
+            position: relative;
+        }
+        .text-container {
+            position: absolute;
+            top: 0;
+            background: none;
+            color: white;
+
+            .wrap {
+                padding: 0 5vw;
+            }
+        }
+        .number {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .header {
+        display: flex;
+        align-items: stretch;
+
+        .right-section {
+            height: 300px;
+        }
+    }
+    .suscribe-section {
+        display: flex;
+        align-items: stretch;
+    }
+}
+@media screen and (min-width: 768px) {
+    .main-container {
+        .column {
+            padding: 0;
+            display: inline-flex;
+        }
+        .squares-container {
+            width: 50%;
+        }
+    }
+    .suscribe-section {
+        .form-group {
+          display: flex;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .main-container {
+        .squares-container {
+            width: 100%;
+        }
+    }
+    .suscribe-section {
+        button {
+          margin-top: 20px;
+          float: right;
+        }
+    }
+}

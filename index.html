@@ -1,0 +1,131 @@
+<div class="wrap">
+    <!DOCTYPE html>
+
+</div>
+<head>
+  <title>CPE - Computadores para educar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row header">
+      <div class="col-xs-12 col-md-6">
+          <img class="img-responsive cpe-logo" src="img/logo_cpe.png">
+          <h1><span>PUEDES APROVECHAR AL MÁXIMO</span>
+            TU EXPERIENCIA EN EL AULA
+          </h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+          </p>
+      </div>
+      <div class="col-xs-12 col-md-6 right-section">
+          <img class="img-responsive demo" src="img/img_demo.png">
+      </div>
+    </div>
+    <div class="row main-container">
+      <div class="col-xs-12 col-lg-6 column">
+          <div class="squares-container">
+            <div class="square number-container blue">
+              <span class="number">1</span>
+            </div>
+            <div class="square text-container">
+                <div class="wrap">
+                    <h2>Consectetuer adipiscing elit, sed diam </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor </p>
+                </div>
+            </div>
+          </div>
+          <div class="squares-container">
+            <div class="square text-container">
+                <div class="wrap">
+                    <h2>Consectetuer adipiscing elit, sed diam </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor </p>
+                </div>
+            </div>
+            <div class="square number-container red">
+              <span class="number">2</span>
+            </div>
+          </div>
+      </div>
+      <div class="col-xs-12 col-lg-6 column">
+          <div class="squares-container">
+            <div class="square number-container yellow">
+              <span class="number">3</span>
+            </div>
+            <div class="square text-container">
+                <div class="wrap">
+                    <h2>Consectetuer adipiscing elit, sed diam </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor </p>
+                </div>
+            </div>
+          </div>
+          <div class="squares-container">
+            <div class="square text-container">
+                <div class="wrap">
+                    <h2>Consectetuer adipiscing elit, sed diam </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor </p>
+                </div>
+            </div>
+            <div class="square number-container green">
+              <span class="number">4</span>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row suscribe-section">
+      <div class="col-xs-12 col-md-6 left-section">
+          <img class="img-responsive demo" src="img/img_demo.png">
+      </div>
+      <div class="col-xs-12 col-md-6 right-section">
+          <h1>Suscríbete para ver nuevos contenidos digitales
+          </h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor</p>
+          <form>
+              <div class="form-group">
+                  <input type="text" id="emailInput"class="form-control" placeholder="e-mail">
+                  <button class="btn btn-default" type="submit" onclick="writeUserData()">
+                    Suscríbete
+                  </button>
+              </div>
+          </form>
+      </div>
+    </div>
+    <div class="row footer">
+        <div class="col-xs-12 logo-container">
+            <a href="http://www.gitei.edu.co"><img class="img-responsive logo" src="img/logo_gitei.png"></a>
+            <div class="vertical-separator"></div>
+            <a href="http://unal.edu.co/"><img class="img-responsive logo" src="img/logo_unal.png"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+$( "button" ).click(function( event ) {
+  event.preventDefault();
+});
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBHjtyBqPsI5M9RJhHQNvrpfpX5nlPA1m8",
+    authDomain: "webgitei-e5e98.firebaseapp.com",
+    databaseURL: "https://webgitei-e5e98.firebaseio.com",
+    projectId: "webgitei-e5e98",
+    storageBucket: "",
+    messagingSenderId: "663643512128"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="js/index.js"></script>
+</body>
+</html>
