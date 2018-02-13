@@ -3,11 +3,16 @@
 ------------------------------------*/
 
 .header {
-    background: $header-bg;
+	background: url('../img/bg-header.jpg') no-repeat;
+	background-size:100% auto;
 
     .cpe-logo {
         max-width: 250px;
     }
+	.intro-content{
+		background-color: rgba(0,0,0,0.3);
+		padding:10px 8px;
+	}
     h1 {
         span {
             font-size: 20px;
@@ -15,7 +20,7 @@
         }
     }
     .right-section {
-        background: url('../img/img_bgheader.png') no-repeat center / contain;
+        /*background: url('../img/img_bgheader.png') no-repeat center / contain;*/
         display: flex;
         align-items: center;
         justify-content: center;

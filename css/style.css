@@ -110,14 +110,18 @@ p {
 ----------------Header--------------
 ------------------------------------*/
 .header {
-  background: #F4F6F7; }
+  background: url("../img/bg-header.jpg") no-repeat;
+  background-size: 100% auto; }
   .header .cpe-logo {
     max-width: 250px; }
+  .header .intro-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 8px; }
   .header h1 span {
     font-size: 20px;
     display: block; }
   .header .right-section {
-    background: url("../img/img_bgheader.png") no-repeat center/contain;
+    /*background: url('../img/img_bgheader.png') no-repeat center / contain;*/
     display: flex;
     align-items: center;
     justify-content: center; }
