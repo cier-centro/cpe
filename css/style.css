@@ -8,9 +8,13 @@
 /*----------------------------------
 ----------------General--------------
 ------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 h1 {
-  color: #2B2D70;
-  font-size: 26px; }
+  color: #ffffff;
+  font-size: 26px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-align: center; }
 
 p {
   font-size: 13px; }
@@ -82,7 +86,7 @@ p {
       margin: 0; }
 
 .suscribe-section {
-  background: #ECEFF1; }
+  background-color: #322e6d; }
   .suscribe-section .left-section {
     display: flex;
     align-items: center;
@@ -119,10 +123,17 @@ p {
     margin: 10px 0 50px 0; }
   .header .intro-content {
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px 8px; }
-  .header h1 span {
-    font-size: 20px;
-    display: block; }
+    padding: 1px 12px 10px 12px;
+    color: #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+  .header h1 {
+    border-bottom: 1px solid; }
+    .header h1 span {
+      font-size: 20px;
+      display: block; }
   .header .right-section {
     /*background: url('../img/img_bgheader.png') no-repeat center / contain;*/
     display: flex;

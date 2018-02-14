@@ -1,10 +1,13 @@
 /*----------------------------------
 ----------------General--------------
 ------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 h1 {
     color: $header-title;
     font-size: 26px;
+	font-family: Montserrat;
+	font-weight:700;
+	text-align:center;
 }
 
 p {
@@ -67,7 +70,7 @@ p {
     }
 }
 .suscribe-section {
-    background: $suscribe-section-bg;
+    background-color:#322e6d;
 
     .left-section {
         display: flex;
