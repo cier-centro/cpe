@@ -1,11 +1,11 @@
 
 
 $( document ).ready(function() {
-  	changeSquareHeight();
+  	//changeSquareHeight(); --SE ELIMINAN PARA QUITAR LOS ERRORES DE YESID
 });
 
 $( window ).resize(function() {
-  	changeSquareHeight();
+  	//changeSquareHeight(); --SE ELIMINAN PARA QUITAR LOS ERRORES DE YESID
 });
 
 function changeSquareHeight() {

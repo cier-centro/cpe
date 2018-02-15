@@ -33,6 +33,17 @@ p {
             margin-top: 0;
         }
     }
+	.thumbnail{
+		@include border-radius-properties(10px);
+		min-height: 541px;
+		h5{
+			border-bottom: 1px solid #322e6d;
+			font-family: Montserrat;
+			font-weight: 700;
+			color:#322e6d;
+			padding-bottom:5px;
+		}
+	}
 
     .number-container {
         display: flex;
@@ -70,7 +81,8 @@ p {
     }
 }
 .suscribe-section {
-    background-color:#322e6d;
+    /*background-color:#322e6d;*/
+	background: url('../img/bg-contact.png') no-repeat #322e6d;
 
     .left-section {
         display: flex;
@@ -80,6 +92,7 @@ p {
 
     p {
         margin: 5vw 0;
+		color:#ffffff;
     }
 
     .form-group {

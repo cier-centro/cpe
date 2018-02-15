@@ -3,12 +3,12 @@
 ------------------------------------*/
 
 .header {
-	background: url('../img/bg-header.jpg') no-repeat;
+	background: url('../img/bg-header.jpg') center no-repeat;
 	background-size:100% auto;
 
     .cpe-logo {
         max-width: 250px;
-		margin:10px 0 50px 0;
+		margin:10px 0 40px 0;
     }
 	.intro-content{
 		background-color: rgba(0,0,0,0.3);
@@ -17,10 +17,13 @@
 		@include border-radius-properties(10px);
 	}
     h1 {
-		border-bottom:1px solid;
+		margin: 14px 0px 9px;
+		border-bottom: 1px solid;
+		padding-bottom: 9px;
         span {
-            font-size: 20px;
+            font-size: 21px;
             display: block;
+			letter-spacing: 0.3px;
         }
     }
     .right-section {

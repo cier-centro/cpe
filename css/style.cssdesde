@@ -33,18 +33,6 @@ p {
       font-size: 13px;
       font-weight: 600;
       margin-top: 0; }
-  .main-container .thumbnail {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px;
-    min-height: 541px; }
-    .main-container .thumbnail h5 {
-      border-bottom: 1px solid #322e6d;
-      font-family: Montserrat;
-      font-weight: 700;
-      color: #322e6d;
-      padding-bottom: 5px; }
   .main-container .number-container {
     display: flex;
     align-items: center;
@@ -98,15 +86,13 @@ p {
       margin: 0; }
 
 .suscribe-section {
-  /*background-color:#322e6d;*/
-  background: url("../img/bg-contact.png") no-repeat #322e6d; }
+  background-color: #322e6d; }
   .suscribe-section .left-section {
     display: flex;
     align-items: center;
     justify-content: center; }
   .suscribe-section p {
-    margin: 5vw 0;
-    color: #ffffff; }
+    margin: 5vw 0; }
   .suscribe-section .form-group input {
     margin-right: 30px;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.35);
@@ -130,11 +116,11 @@ p {
 ----------------Header--------------
 ------------------------------------*/
 .header {
-  background: url("../img/bg-header.jpg") center no-repeat;
+  background: url("../img/bg-header.jpg") no-repeat;
   background-size: 100% auto; }
   .header .cpe-logo {
     max-width: 250px;
-    margin: 10px 0 40px 0; }
+    margin: 10px 0 50px 0; }
   .header .intro-content {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1px 12px 10px 12px;
@@ -144,13 +130,10 @@ p {
     -ms-border-radius: 10px;
     border-radius: 10px; }
   .header h1 {
-    margin: 14px 0px 9px;
-    border-bottom: 1px solid;
-    padding-bottom: 9px; }
+    border-bottom: 1px solid; }
     .header h1 span {
-      font-size: 21px;
-      display: block;
-      letter-spacing: 0.3px; }
+      font-size: 20px;
+      display: block; }
   .header .right-section {
     /*background: url('../img/img_bgheader.png') no-repeat center / contain;*/
     display: flex;
@@ -206,16 +189,6 @@ p {
   .suscribe-section .form-group {
     display: flex; } }
 @media screen and (max-width: 767px) {
-  .header .cpe-logo {
-    max-width: 150px;
-    margin: auto; }
-  .header .intro-content {
-    margin-top: 10px;
-    padding: 0px 12px 1px 12px; }
-    .header .intro-content h1 {
-      padding: 5px 0px;
-      margin-top: 5px; }
-
   .main-container .squares-container {
     width: 100%; }
 
@@ -223,4 +196,4 @@ p {
     margin-top: 20px;
     float: right; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cssdesde.map */
