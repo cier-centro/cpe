@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*----------------------------------
 ---------------Variables------------
 ------------------------------------*/
@@ -15,6 +16,10 @@ h1 {
   font-family: Montserrat;
   font-weight: 700;
   text-align: center; }
+
+h3 {
+  font-family: Montserrat;
+  font-weight: 700; }
 
 p {
   font-size: 13px; }
@@ -98,12 +103,38 @@ p {
       margin: 0; }
 
 .suscribe-section {
-  /*background-color:#322e6d;*/
-  background: url("../img/bg-contact.png") no-repeat #322e6d; }
+  background: url("../img/bg-contact.png") no-repeat bottom left #322e6d;
+  /*---- url('../img/bg-heder-contact.png') no-repeat 90% 0% #322e6d;*/ }
   .suscribe-section .left-section {
     display: flex;
     align-items: center;
     justify-content: center; }
+  .suscribe-section h1 {
+    margin: 10px 0; }
+    .suscribe-section h1 > span:first-child {
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      display: inline-block;
+      font-size: 18px;
+      font-variant: small-caps;
+      height: 86px; }
+    .suscribe-section h1 label {
+      display: inline-block;
+      width: 90%;
+      text-align: left;
+      vertical-align: top;
+      font-size: 36px;
+      text-transform: uppercase;
+      letter-spacing: 6; }
+      .suscribe-section h1 label span {
+        font-size: 44px;
+        letter-spacing: 8; }
+  .suscribe-section h3 {
+    color: #ffffff;
+    /*esta secci├│n se retira*/
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px; }
   .suscribe-section p {
     margin: 5vw 0;
     color: #ffffff; }
@@ -152,7 +183,6 @@ p {
       display: block;
       letter-spacing: 0.3px; }
   .header .right-section {
-    /*background: url('../img/img_bgheader.png') no-repeat center / contain;*/
     display: flex;
     align-items: center;
     justify-content: center; }
