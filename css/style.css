@@ -6,6 +6,18 @@
  * Mixins
  * --------------------------------------------------
  */
+/*
+@mixin background-gradient-angle-properties($color1, $color2, $angle) {
+	background: rgba($color1,1);
+	background: -moz-linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba($color1,1)), color-stop(100%, rgba($color2,1)));
+	background: -webkit-linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	background: -o-linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	background: -ms-linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	background: linear-gradient($angle, rgba($color1,1) 0%, rgba($color2,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=1 );
+}
+*/
 /*----------------------------------
 ----------------General--------------
 ------------------------------------*/
@@ -103,21 +115,41 @@ p {
       margin: 0; }
 
 .suscribe-section {
-  background: url("../img/bg-contact.png") no-repeat bottom left #322e6d;
-  /*---- url('../img/bg-heder-contact.png') no-repeat 90% 0% #322e6d;*/ }
+  background: url("../img/bg-contact.png") no-repeat bottom left #322e6d; }
   .suscribe-section .left-section {
     display: flex;
     align-items: center;
     justify-content: center; }
+  .suscribe-section .specific-title {
+    background: #b64c7d;
+    background: -moz-linear-gradient(45deg, #b64c7d 0%, #ff8361 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #b64c7d), color-stop(100%, #ff8361));
+    background: -webkit-linear-gradient(45deg, #b64c7d 0%, #ff8361 100%);
+    background: -o-linear-gradient(45deg, #b64c7d 0%, #ff8361 100%);
+    background: -ms-linear-gradient(45deg, #b64c7d 0%, #ff8361 100%);
+    background: linear-gradient(45deg, #b64c7d 0%, #ff8361 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b64c7d', endColorstr='#ff8361', GradientType=1 );
+    padding: 10px 25px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
   .suscribe-section h1 {
-    margin: 10px 0; }
+    margin: 10px -8px; }
     .suscribe-section h1 > span:first-child {
       writing-mode: vertical-lr;
       transform: rotate(180deg);
       display: inline-block;
       font-size: 18px;
       font-variant: small-caps;
-      height: 86px; }
+      height: 80px;
+      background: #322e6d;
+      padding: 0 3px 0 6px;
+      margin-top: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
     .suscribe-section h1 label {
       display: inline-block;
       width: 90%;
@@ -136,7 +168,7 @@ p {
     font-weight: 700;
     letter-spacing: 3px; }
   .suscribe-section p {
-    margin: 5vw 0;
+    margin: 2vw 0;
     color: #ffffff; }
   .suscribe-section .form-group input {
     margin-right: 30px;
@@ -147,15 +179,12 @@ p {
     color: white;
     font-weight: 600;
     padding: 6px 30px;
-    border-radius: 20px;
-    background: #ee7d67;
-    background: -moz-linear-gradient(left, #ee7d67 0%, #d45183 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #ee7d67), color-stop(100%, #d45183));
-    background: -webkit-linear-gradient(left, #ee7d67 0%, #d45183 100%);
-    background: -o-linear-gradient(left, #ee7d67 0%, #d45183 100%);
-    background: -ms-linear-gradient(left, #ee7d67 0%, #d45183 100%);
-    background: linear-gradient(to right, #ee7d67 0%, #d45183 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee7d67', endColorstr='#d45183', GradientType=1 ); }
+    border-radius: 6px;
+    background: #00c0c9;
+    /*@include background-gradient-horizontal-properties(#00c0c9, #00c0c9);*/
+    border: none; }
+  .suscribe-section .form-group label {
+    color: #ffffff; }
 
 /*----------------------------------
 ----------------Header--------------
@@ -231,11 +260,11 @@ p {
     padding: 0;
     display: inline-flex; }
   .main-container .squares-container {
-    width: 50%; }
-
-  .suscribe-section .form-group {
-    display: flex; } }
+    width: 50%; } }
 @media screen and (max-width: 767px) {
+  .suscribe-section {
+    background-image: none; }
+
   .header .cpe-logo {
     max-width: 150px;
     margin: auto; }

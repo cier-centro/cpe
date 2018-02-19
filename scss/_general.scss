@@ -86,21 +86,36 @@ p {
 }
 .suscribe-section {
 	background: url('../img/bg-contact.png') no-repeat bottom left #322e6d;
-	/*---- url('../img/bg-heder-contact.png') no-repeat 90% 0% #322e6d;*/
     .left-section {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+	.specific-title{
+		background: rgba(182,76,125,1);
+		background: -moz-linear-gradient(45deg, rgba(182,76,125,1) 0%, rgba(255,131,97,1) 100%);
+		background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(182,76,125,1)), color-stop(100%, rgba(255,131,97,1)));
+		background: -webkit-linear-gradient(45deg, rgba(182,76,125,1) 0%, rgba(255,131,97,1) 100%);
+		background: -o-linear-gradient(45deg, rgba(182,76,125,1) 0%, rgba(255,131,97,1) 100%);
+		background: -ms-linear-gradient(45deg, rgba(182,76,125,1) 0%, rgba(255,131,97,1) 100%);
+		background: linear-gradient(45deg, rgba(182,76,125,1) 0%, rgba(255,131,97,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b64c7d', endColorstr='#ff8361', GradientType=1 );
+		padding:10px 25px;
+		@include border-radius-properties(10px);
+	}
 	h1{
-	 margin:10px 0;
+	 margin:10px -8px;
 		& > span:first-child{
 			writing-mode: vertical-lr;
 			transform: rotate(180deg);
 			display:inline-block;
 			font-size: 18px;
 			font-variant: small-caps;
-			height: 86px;
+			height: 80px;
+			background: #322e6d;
+			padding: 0 3px 0 6px;
+			margin-top: 5px;
+			@include border-radius-properties(5px);
 		}
 		label{
 			display:inline-block;
@@ -123,7 +138,7 @@ p {
 		letter-spacing: 3px;
 	}
     p {
-        margin: 5vw 0;
+        margin: 2vw 0;
 		color:#ffffff;
     }
 
@@ -136,8 +151,13 @@ p {
             color: white;
             font-weight: 600;
             padding: 6px 30px;
-            border-radius: 20px;
-            @include background-gradient-horizontal-properties(#ee7d67, #d45183);
+            border-radius: 6px;
+			background:#00c0c9;
+            /*@include background-gradient-horizontal-properties(#00c0c9, #00c0c9);*/
+			border:none;
         }
+		label {
+			color:#ffffff;
+		}
     }
 }

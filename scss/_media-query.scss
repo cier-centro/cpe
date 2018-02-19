@@ -34,6 +34,7 @@
         display: flex;
         align-items: stretch;
     }
+	
 }
 @media screen and (min-width: 768px) {
     .main-container {
@@ -45,13 +46,11 @@
             width: 50%;
         }
     }
-    .suscribe-section {
-        .form-group {
-          display: flex;
-        }
-    }
 }
 @media screen and (max-width: 767px) {
+	.suscribe-section {
+		background-image: none;
+	}
 	.header {
 		.cpe-logo {
 			max-width: 150px;
